@@ -114,7 +114,7 @@ class GameScene extends Phaser.Scene {
       if (this.time.now > shortime) {
         this.bullet.create(this.player.x, this.player.y, "bullet").setScale(.2);
         this.bullet.setVelocityX(500);
-        shortime = this.time.now + 400;
+        shortime = this.time.now + 350;
       }
     }
     this.info.setText(`Score : ${this.score}`);
@@ -248,10 +248,10 @@ function createEnemy(x, y, type) {
       enemy.setScale(1); //5
       break;
     case "enemy2":
-      enemy.setScale(1.5); //8
+      enemy.setScale(1); //8
       break;
     case "enemy3":
-      enemy.setScale(2); //15
+      enemy.setScale(1); //15
       break;
     default:
       break;
