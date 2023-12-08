@@ -15,10 +15,11 @@ const config = {
         default: 'arcade',
         arcade: {
             gravity: {},
-            debug: true
+            debug: false
         }
     },
     scene: [
+        GameScene2,
         GameScene, 
         
     ]
